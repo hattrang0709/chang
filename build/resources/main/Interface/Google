@@ -1,0 +1,15 @@
+{
+  "Interfaces":
+  {
+    "SearchPage": [
+      {
+        "name": "txtSearch",
+        "elements": "//input[@title='Tìm kiếm' or @title= 'Search']"
+      },
+      {
+        "name": "iconSearch",
+        "elements": "//div[@class='iblpc']"
+      }
+    ]
+  }
+}
