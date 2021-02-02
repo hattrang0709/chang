@@ -1,6 +1,5 @@
-plugins {
-    id 'java'
-}
+apply plugin: 'java'
+apply plugin: 'idea'
 
 group 'org.example'
 version '1.0-SNAPSHOT'
@@ -12,13 +11,14 @@ repositories {
 sourceCompatibility = 1.8
 
 dependencies {
+    implementation 'org.testng:testng:7.1.0'
+
+    // https://mvnrepository.com/artifact/org.testng/testng
     testCompile group: 'org.testng', name: 'testng', version: '7.1.0'
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.12.1'
-    // https://mvnrepository.com/artifact/org.testng/testng
-    testCompile group: 'org.testng', name: 'testng', version: '7.3.0'
 }
 
 test {
