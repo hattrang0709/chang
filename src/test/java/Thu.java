@@ -3,12 +3,12 @@ import Pages.SearchPage;
 import org.testng.annotations.Test;
 
 public class Thu extends BaseTest {
-//    SearchPage page = new SearchPage();
+
+    SearchPage searchPage;
 
     @Test
-    public void TestCase1(){
-        SearchPage page = new SearchPage();
-        openBrowser();
-        page.enterSearchbtn("do");
+    public void TestCase1() {
+        searchPage = new SearchPage();
+        searchPage.enterSearchbtn("do");
     }
 }
