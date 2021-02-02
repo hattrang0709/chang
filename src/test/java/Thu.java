@@ -1,14 +1,14 @@
-import Common.BaseTest;
-import Pages.SearchPage;
+
 import org.testng.annotations.Test;
+import pages.HomePage;
 
 public class Thu extends BaseTest {
 
-    SearchPage searchPage;
+    HomePage home = new HomePage();
 
     @Test
     public void TestCase1() {
-        searchPage = new SearchPage();
-        searchPage.enterSearchbtn("do");
+        home.enterSearchbtn("mau do");
+        home.clickSearchIcon();
     }
 }
