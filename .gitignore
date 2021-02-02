@@ -1,5 +1,5 @@
- settings.gradle
- build
- .idea
- .gradle
- gradle
+settings.gradle
+build
+.idea/
+.gradle/
+gradle
